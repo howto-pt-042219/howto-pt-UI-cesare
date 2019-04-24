@@ -1,2 +1,3 @@
 # howto-pt-UI-cesare
-How-to UI Cesare Ferrari
+
+This is the repository for **How-to UI** project for Cesare Ferrari.
