@@ -244,7 +244,7 @@ nav .hamburger {
 }
 .card .info {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .card .info .desc h3 {
   font-family: 'Roboto Condensed', sans-serif;
@@ -258,7 +258,7 @@ nav .hamburger {
 .card .info .meta {
   display: flex;
   flex-direction: column;
-  width: 80px;
+  width: 100px;
   margin-right: 20px;
 }
 .card .info .meta div {
