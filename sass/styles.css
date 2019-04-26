@@ -125,19 +125,6 @@ table {
 * {
   box-sizing: border-box;
 }
-body {
-  background-color: yellow;
-}
-@media (min-width: 800px) {
-  body {
-    background-color: red;
-  }
-}
-@media (min-width: 1000px) {
-  body {
-    background-color: green;
-  }
-}
 html {
   font-size: 62.5%;
 }
