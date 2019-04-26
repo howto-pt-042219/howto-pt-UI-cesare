@@ -208,8 +208,25 @@ header {
   align-items: center;
   margin: 20px 0 0;
 }
+@media (min-width: 1000px) {
+  header {
+    flex-direction: row;
+    margin-top: 0;
+    align-items: stretch;
+  }
+}
 .logo {
   width: 180px;
+}
+@media (min-width: 1000px) {
+  .logo {
+    margin: 0 30px;
+  }
+}
+@media (min-width: 1000px) {
+  .tagline {
+    display: none;
+  }
 }
 nav {
   display: flex;
@@ -221,6 +238,11 @@ nav {
   color: white;
   margin-top: 20px;
 }
+@media (min-width: 1000px) {
+  nav {
+    display: none;
+  }
+}
 nav a {
   color: white;
   text-decoration: none;
@@ -230,6 +252,18 @@ nav a {
 }
 nav .hamburger {
   margin: 0 20px;
+}
+nav.full {
+  display: none;
+}
+@media (min-width: 1000px) {
+  nav.full {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0;
+    height: initial;
+  }
 }
 .hero {
   width: 100%;
@@ -276,6 +310,16 @@ nav .hamburger {
   margin: auto;
   text-align: center;
   padding: 20px;
+}
+.white-button {
+  color: #B41010;
+  background-color: white;
+  border: 2px solid #B41010;
+}
+.white-button:hover {
+  background-color: #B41010;
+  color: white;
+  border: 2px solid white;
 }
 .card {
   display: flex;

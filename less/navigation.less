@@ -1,4 +1,8 @@
 nav {
+  @media @desktop {
+    display: none;
+  }
+
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -18,6 +22,18 @@ nav {
 
   .hamburger {
     margin: 0 20px;
+  }
+}
+
+nav.full {
+  display: none;
+
+  @media @desktop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0;
+    height: initial;
   }
 }
 
