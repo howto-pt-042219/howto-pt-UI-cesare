@@ -240,6 +240,7 @@ nav .hamburger {
   border: 1px solid #2384A8;
   border-radius: 10px;
   padding: 10px;
+  margin-bottom: 15px;
 }
 .card .info {
   display: flex;
@@ -253,6 +254,29 @@ nav .hamburger {
 }
 .card .info .desc p {
   font-size: 1.6rem;
+}
+.card .info .meta {
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  margin-right: 20px;
+}
+.card .info .meta div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.card .info .meta div .thumbs-count {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.card .info .meta div .up {
+  color: #B41010;
+}
+.card .info .meta div .down {
+  color: #2384A8;
 }
 .card .actions {
   display: flex;
