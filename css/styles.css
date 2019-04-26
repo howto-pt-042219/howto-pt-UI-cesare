@@ -132,6 +132,15 @@ table {
   margin-top: 30px;
   margin-bottom: 20px;
 }
+.main h1 {
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 3.8rem;
+  color: #696767;
+  text-align: center;
+  margin: 40px 0 20px;
+}
 .call-to-action {
   background-color: rgba(211, 186, 81, 0.3);
   padding: 10px 40px 40px;
@@ -298,6 +307,30 @@ nav .hamburger {
   font-style: italic;
   color: #2384A8;
   font-size: 1.5rem;
+}
+.category-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.category-boxes .category-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 30px;
+}
+.category-boxes .category-box h2 {
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  color: #696767;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 0;
+}
+.category-boxes .category-box p {
+  width: 80%;
+  text-align: center;
 }
 footer {
   background-color: #2384A8;
