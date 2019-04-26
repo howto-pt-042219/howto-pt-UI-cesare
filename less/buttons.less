@@ -1,0 +1,33 @@
+.button {
+  padding: 10px 20px;
+  .condensed();
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 39px;
+  cursor: pointer;
+
+  &:active {
+    background-color: black;
+  }
+}
+
+.blue-button {
+  color: white;
+  background-color: @blue;
+
+  &:hover {
+    background-color: darken(@blue, 15%);
+  }
+}
+
+.red-button {
+  color: white;
+  background-color: @red;
+}
+
+.large-button {
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}

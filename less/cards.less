@@ -1,0 +1,67 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: @light-yellow;
+  border: 1px solid @blue;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+
+  .info {
+    display: flex;
+    justify-content: flex-start;
+
+    .desc {
+      h3 {
+        .condensed();
+        font-size: 2.0rem;
+        margin-bottom: 8px;
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
+    }
+
+    .meta {
+      display: flex;
+      flex-direction: column;
+      width: 100px;
+      margin-right: 20px;
+
+      div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+
+        .thumbs-count {
+          .condensed();
+          font-size: 1.5rem;
+        }
+
+        .up {
+          color: @red;
+        }
+
+        .down {
+          color: @blue;
+        }
+      }
+
+    }
+  }
+
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+
+    .date {
+      font-style: italic;
+      color: @blue;
+      font-size: 1.5rem;
+    }
+  }
+}
