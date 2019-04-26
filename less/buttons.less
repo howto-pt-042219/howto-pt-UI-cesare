@@ -1,0 +1,22 @@
+.button {
+  padding: 10px 20px;
+  .condensed();
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 39px;
+  cursor: pointer;
+
+  &:active {
+    background-color: black;
+  }
+}
+
+.blue-button {
+  color: white;
+  background-color: @blue;
+
+  &:hover {
+    background-color: darken(@blue, 15%);
+  }
+}
+
