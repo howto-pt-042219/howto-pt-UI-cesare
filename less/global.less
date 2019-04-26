@@ -14,9 +14,18 @@
     text-align: center;
     margin: 40px 0 40px;
   }
+
+  @media @desktop {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 30px;
+  }
 }
 
 .call-to-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: @dark-yellow;
   padding: 10px 40px 40px;;
 
@@ -24,6 +33,13 @@
     text-align: center;
     margin: 20px 0 40px;
   }
+
+  .large-button {
+    @media @desktop {
+      display: inline-block;
+    }
+  }
+
 }
 
 

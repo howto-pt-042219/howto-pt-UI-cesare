@@ -141,13 +141,28 @@ table {
   text-align: center;
   margin: 40px 0 40px;
 }
+@media (min-width: 1000px) {
+  .main {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 30px;
+  }
+}
 .call-to-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: rgba(211, 186, 81, 0.3);
   padding: 10px 40px 40px;
 }
 .call-to-action p {
   text-align: center;
   margin: 20px 0 40px;
+}
+@media (min-width: 1000px) {
+  .call-to-action .large-button {
+    display: inline-block;
+  }
 }
 .boxes {
   display: flex;
@@ -269,10 +284,24 @@ nav.full {
   width: 100%;
   height: 228px;
   background-image: url(../images/man.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   padding: 0 10px;
+}
+@media (min-width: 1000px) {
+  .hero {
+    background-image: url(../images/man-large.jpg);
+    height: 350px;
+  }
+}
+@media (min-width: 800px) {
+  .hero {
+    background-image: url(../images/man-large.jpg);
+    height: 350px;
+  }
 }
 .hero h1 {
   color: #ECF25D;
@@ -281,6 +310,28 @@ nav.full {
   font-size: 4rem;
   line-height: 4.2rem;
   margin-top: 60px;
+}
+@media (min-width: 1000px) {
+  .hero h1 {
+    background-color: rgba(50, 49, 47, 0.6);
+    padding: 20px;
+  }
+}
+@media (min-width: 800px) {
+  .hero h1 {
+    background-color: rgba(50, 49, 47, 0.6);
+    padding: 20px;
+  }
+}
+@media (min-width: 1000px) {
+  .hero .large-button {
+    margin: 40px 40px 0 0;
+  }
+}
+@media (min-width: 800px) {
+  .hero .large-button {
+    margin: 40px 40px 0 0;
+  }
 }
 .button {
   padding: 10px 20px;
