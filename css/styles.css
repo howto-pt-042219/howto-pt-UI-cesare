@@ -125,6 +125,13 @@ table {
 * {
   box-sizing: border-box;
 }
+.main {
+  padding: 0 10px;
+}
+.main h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
 .condensed {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
@@ -135,9 +142,19 @@ html {
 body {
   font-size: 1.8rem;
   font-family: 'Roboto', sans-serif;
+  color: #505455;
 }
 h1 {
   font-size: 2.4rem;
+}
+h2 {
+  font-size: 2.4rem;
+  color: #2384A8;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+}
+p {
+  line-height: 120%;
 }
 .tagline {
   color: #9B9B9B;
@@ -211,4 +228,40 @@ nav .hamburger {
 }
 .blue-button:hover {
   background-color: #165269;
+}
+.red-button {
+  color: white;
+  background-color: #B41010;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(236, 242, 93, 0.09);
+  border: 1px solid #2384A8;
+  border-radius: 10px;
+  padding: 10px;
+}
+.card .info {
+  display: flex;
+  justify-content: space-between;
+}
+.card .info .desc h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+.card .info .desc p {
+  font-size: 1.6rem;
+}
+.card .actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.card .actions .date {
+  font-style: italic;
+  color: #2384A8;
+  font-size: 1.5rem;
 }
