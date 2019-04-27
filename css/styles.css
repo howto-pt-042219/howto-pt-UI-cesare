@@ -441,10 +441,22 @@ footer nav {
   background-color: transparent;
   height: 100%;
 }
+@media (min-width: 1000px) {
+  footer nav {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 50px;
+  }
+}
 footer nav a {
   color: white;
   text-decoration: none;
   padding: 5px 0;
+}
+@media (min-width: 1000px) {
+  footer nav a {
+    margin-right: 40px;
+  }
 }
 footer .footer-logo {
   display: block;
@@ -457,4 +469,12 @@ footer .credits {
   text-align: center;
   border-top: 1px solid white;
   padding-top: 20px;
+}
+@media (min-width: 1000px) {
+  .footer-info {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+  }
 }
