@@ -169,11 +169,24 @@ table {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 1000px) {
+  .boxes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
 .boxes .box {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 0 40px;
+}
+@media (min-width: 1000px) {
+  .boxes .box {
+    width: 30%;
+  }
 }
 .boxes .box h2 {
   text-transform: uppercase;
