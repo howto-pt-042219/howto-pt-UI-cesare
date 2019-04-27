@@ -142,6 +142,11 @@ table {
   margin: 40px 0 40px;
 }
 @media (min-width: 1000px) {
+  .main h1 {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 1000px) {
   .main {
     width: 100%;
     max-width: 900px;
