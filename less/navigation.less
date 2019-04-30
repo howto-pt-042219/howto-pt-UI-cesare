@@ -1,45 +1,123 @@
-nav {
+// Mobile menu
+
+.mobile-menu {
+  background-color: @red;
+  width: 100%;
+  position: relative;
+
+  .menu-bar {
+    background-color: @red;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid white;
+
+    a {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      .condensed();
+    }
+
+    .hamburger {
+      margin: 0 20px;
+      cursor: pointer;
+    }
+  }
+
+  nav {
+
+    width: 100%;
+    color: white;
+    position: absolute;
+    background-color: @red;
+
+    a {
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid white;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      .condensed();
+      padding: 10px 0 10px 75px;
+    }
+  }
+
   @media @desktop {
     display: none;
   }
+}
 
-  display: flex;
+
+
+// Desktop menu
+
+.full-menu {
+  display: none;
+
   justify-content: flex-start;
   align-items: center;
-  background-color: @red;
-  height: 42px;
+  margin-top: 0;
+  height: 100%;
   width: 100%;
-  color: white;
-  margin-top: 20px;
+  background-color: @red;
 
-  a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    .condensed();
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    height: 73px;
+
+    a {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      .condensed();
+
+      &:hover {
+        color: @yellow;
+      }
+    }
+
+    .white-button {
+      color: @red;
+
+      &:hover {
+        color: white;
+      }
+    }
   }
 
-  .hamburger {
-    margin: 0 20px;
+
+  @media @desktop {
+  display: flex;
   }
 }
 
-nav.full {
+
+
+// .full {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+// 
+//   @media @desktop {
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: center;
+//     margin-top: 0;
+//     height: initial;
+//   }
+// }
+
+.hide {
   display: none;
-
-  @media @desktop {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 0;
-    height: initial;
-  }
-
-  .mobile-open {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
 }
 

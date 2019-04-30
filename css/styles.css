@@ -275,52 +275,103 @@ header {
     margin: 0 30px;
   }
 }
+.tagline {
+  margin-bottom: 20px;
+}
 @media (min-width: 1000px) {
   .tagline {
-    display: none;
+    position: absolute;
+    top: 90px;
+    left: 30px;
+    color: white;
   }
 }
-nav {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+.mobile-menu {
   background-color: #B41010;
-  height: 42px;
   width: 100%;
-  color: white;
-  margin-top: 20px;
+  position: relative;
 }
-@media (min-width: 1000px) {
-  nav {
-    display: none;
-  }
+.mobile-menu .menu-bar {
+  background-color: #B41010;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid white;
 }
-nav a {
+.mobile-menu .menu-bar a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
 }
-nav .hamburger {
+.mobile-menu .menu-bar .hamburger {
   margin: 0 20px;
+  cursor: pointer;
 }
-nav.full {
-  display: none;
+.mobile-menu nav {
+  width: 100%;
+  color: white;
+  position: absolute;
+  background-color: #B41010;
+}
+.mobile-menu nav a {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid white;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  padding: 10px 0 10px 75px;
 }
 @media (min-width: 1000px) {
-  nav.full {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 0;
-    height: initial;
+  .mobile-menu {
+    display: none;
   }
 }
-nav.full .mobile-open {
-  display: flex;
-  flex-direction: column;
+.full-menu {
+  display: none;
   justify-content: flex-start;
+  align-items: center;
+  margin-top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #B41010;
+}
+.full-menu nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  height: 73px;
+}
+.full-menu nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+}
+.full-menu nav a:hover {
+  color: #ECF25D;
+}
+.full-menu nav .white-button {
+  color: #B41010;
+}
+.full-menu nav .white-button:hover {
+  color: white;
+}
+@media (min-width: 1000px) {
+  .full-menu {
+    display: flex;
+  }
+}
+.hide {
+  display: none;
 }
 .hero {
   width: 100%;
