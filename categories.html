@@ -14,17 +14,27 @@
     <a href="index.html"><img class="logo" src="images/HOW2.svg" alt="HOW2"></a>
     <p class="tagline">Simplifying life for everyone</p>
 
-    <nav>
-      <img class="hamburger" src="images/hamburger.svg" alt="menu">
-      <a href="#">menu</a>
-    </nav>
+    <div class="mobile-menu">
+      <div class="menu-bar">
+        <img class="hamburger menu-btn" src="images/hamburger.svg" alt="menu">
+        <a class="menu-btn" href="#">menu</a>
+      </div>
+      <nav class="hide">
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a id="signin-button" class="button white-button" href="">Sign in</a>
+      </nav>
+    </div>
 
-    <nav class="full">
-      <a href="index.html">Home</a>
-      <a href="categories.html">Categories</a>
-      <a href="about.html">About</a>
-      <a class="button white-button" href="">Sign in</a>
-    </nav>
+    <div class="full-menu">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a id="signin-button" class="button white-button" href="">Sign in</a>
+      </nav>
+    </div>
   </header>
 
   <section class="main">
@@ -118,8 +128,9 @@
       </nav>
     </div>
 
-    <p class="credits">&copy; 2019 - All right reserved.</p>
+    <p class="credits">&copy; 2019 - HOW2 - All right reserved.</p>
   </footer>
   
+  <script src="javascripts/scripts.js"></script>
 </body>
 </html>

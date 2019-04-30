@@ -143,7 +143,12 @@ table {
 }
 @media (min-width: 1000px) {
   .main h1 {
-    font-size: 6rem;
+    font-size: 6.5rem;
+  }
+}
+@media (min-width: 800px) {
+  .main h1 {
+    font-size: 5rem;
   }
 }
 @media (min-width: 1000px) {
