@@ -310,6 +310,9 @@ header {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
 }
+.mobile-menu .menu-bar .active {
+  color: #ECF25D;
+}
 .mobile-menu .menu-bar .hamburger {
   margin: 0 20px;
   cursor: pointer;
@@ -362,6 +365,9 @@ header {
   font-weight: 700;
 }
 .full-menu nav a:hover {
+  color: #ECF25D;
+}
+.full-menu nav .active {
   color: #ECF25D;
 }
 .full-menu nav .white-button {
