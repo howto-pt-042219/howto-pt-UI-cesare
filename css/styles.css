@@ -154,7 +154,7 @@ table {
 @media (min-width: 1000px) {
   .main {
     width: 100%;
-    max-width: 900px;
+    max-width: 950px;
     margin: 0 auto 30px;
   }
 }
@@ -183,7 +183,7 @@ table {
   .boxes {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
   }
 }
@@ -191,7 +191,7 @@ table {
   .boxes {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
   }
 }
@@ -199,16 +199,16 @@ table {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 0 40px;
+  margin: 0 20px 40px;
 }
 @media (min-width: 800px) {
   .boxes .box {
-    width: 48%;
+    width: 45%;
   }
 }
 @media (min-width: 1000px) {
   .boxes .box {
-    width: 30%;
+    width: 28%;
   }
 }
 .boxes .box h2 {
@@ -224,6 +224,15 @@ table {
   width: 80%;
   text-align: center;
 }
+.tabs {
+  margin: 20px auto 40px;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+.tabs .tab {
+  margin: 0 10px;
+}
 .condensed {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
@@ -231,7 +240,7 @@ table {
 .boxes-to-row {
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
 }
 html {
@@ -476,6 +485,19 @@ header {
   background-color: #B41010;
   color: white;
   border: 2px solid white;
+}
+.category-button {
+  color: #696767;
+  background-color: #d4edf6;
+  border: 1px solid #696767;
+  padding: 6px 10px;
+  border-radius: 12px;
+}
+.category-button:hover {
+  background-color: #bfe4f2;
+}
+.active-tab {
+  background-color: #aadbed;
 }
 .card {
   display: flex;
