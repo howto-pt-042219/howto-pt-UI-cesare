@@ -644,3 +644,6 @@ footer .credits {
 .slide .info h2 {
   color: white;
 }
+.slide-hide {
+  display: none;
+}
