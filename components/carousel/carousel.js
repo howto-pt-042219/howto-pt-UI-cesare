@@ -31,5 +31,13 @@ const openCarousel = function(event) {
   slide.slideElement.classList.remove('slide-hide');
 }
 
+const closeCarousel = function(event) {
+  event.preventDefault();
+  carousel.carouselElement.classList.add('hide');
+}
+
 const moreButtons = document.querySelectorAll('.more');
 moreButtons.forEach(button => button.addEventListener('click', openCarousel));
+
+const closeButton = document.querySelector('.close');
+closeButton.addEventListener('click', closeCarousel);

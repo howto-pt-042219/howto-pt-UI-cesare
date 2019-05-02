@@ -613,6 +613,7 @@ footer .credits {
   margin: 0 10px;
 }
 .carousel {
+  position: relative;
   width: 70%;
   height: 60%;
   background-color: #696767;
@@ -646,4 +647,10 @@ footer .credits {
 }
 .slide-hide {
   display: none;
+}
+.close {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: white;
 }
