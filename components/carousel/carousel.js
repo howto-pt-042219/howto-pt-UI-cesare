@@ -18,6 +18,7 @@ class Slide {
 }
 
 const carousel = new Carousel(document.querySelector('.carousel'));
+const overlay = document.querySelector('.overlay');
 
 const openCarousel = function(event) {
   event.preventDefault();
@@ -26,6 +27,7 @@ const openCarousel = function(event) {
     return slide.name === name;
   })
 
+  overlay.classList.remove('hide');
   carousel.carouselElement.classList.remove('hide');
   carousel.slides.forEach(slide => slide.slideElement.classList.add('slide-hide'));
   slide.slideElement.classList.remove('slide-hide');
@@ -33,6 +35,7 @@ const openCarousel = function(event) {
 
 const closeCarousel = function(event) {
   event.preventDefault();
+  overlay.classList.add('hide');
   carousel.carouselElement.classList.add('hide');
 }
 
