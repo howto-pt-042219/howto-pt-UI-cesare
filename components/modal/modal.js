@@ -1,6 +1,6 @@
-class Carousel {
-  constructor(carouselElement) {
-    this.carouselElement = carouselElement;
+class Modal {
+  constructor(modalElement) {
+    this.modalElement = modalElement;
     //this.slides = document.querySelectorAll('.slide');
     this.slides = [];
     document.querySelectorAll('.slide').forEach(slide => {
@@ -17,30 +17,30 @@ class Slide {
   }
 }
 
-const carousel = new Carousel(document.querySelector('.carousel'));
+const modal = new Modal(document.querySelector('.modal'));
 const overlay = document.querySelector('.overlay');
 
-const openCarousel = function(event) {
+const openModal = function(event) {
   event.preventDefault();
   name = event.target.dataset.name;
-  slide = carousel.slides.find(function(slide) {
+  slide = modal.slides.find(function(slide) {
     return slide.name === name;
   })
 
   overlay.classList.remove('hide');
-  carousel.carouselElement.classList.remove('hide');
-  carousel.slides.forEach(slide => slide.slideElement.classList.add('slide-hide'));
+  modal.modalElement.classList.remove('hide');
+  modal.slides.forEach(slide => slide.slideElement.classList.add('slide-hide'));
   slide.slideElement.classList.remove('slide-hide');
 }
 
-const closeCarousel = function(event) {
+const closeModal = function(event) {
   event.preventDefault();
   overlay.classList.add('hide');
-  carousel.carouselElement.classList.add('hide');
+  modal.modalElement.classList.add('hide');
 }
 
 const moreButtons = document.querySelectorAll('.more');
-moreButtons.forEach(button => button.addEventListener('click', openCarousel));
+moreButtons.forEach(button => button.addEventListener('click', openModal));
 
 const closeButton = document.querySelector('.close');
-closeButton.addEventListener('click', closeCarousel);
+closeButton.addEventListener('click', closeModal);
