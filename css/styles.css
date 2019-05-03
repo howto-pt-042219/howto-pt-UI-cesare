@@ -256,8 +256,8 @@ p {
 }
 .tagline {
   color: #9B9B9B;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1.9rem;
+  font-weight: 300;
 }
 header {
   display: flex;
@@ -290,6 +290,9 @@ header {
     left: 30px;
     color: white;
   }
+}
+.dark {
+  color: #2384A8;
 }
 .mobile-menu {
   background-color: #B41010;
