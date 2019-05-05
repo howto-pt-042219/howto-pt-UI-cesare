@@ -12,17 +12,32 @@
 
   <header>
     <a href="index.html"><img class="logo" src="images/HOW2.svg" alt="HOW2"></a>
-    <p class="tagline">Simplifying life for everyone</p>
+    <p class="tagline dark">Simplifying life for everyone</p>
+
+    <div class="mobile-menu">
+      <div class="menu-bar">
+        <img class="hamburger menu-btn" src="images/hamburger.svg" alt="menu">
+        <a class="menu-btn" href="#">menu</a>
+      </div>
+      <nav class="hide">
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a id="signin-button" class="button white-button" href="">Sign in</a>
+      </nav>
+    </div>
+
+    <div class="full-menu">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a class="active" href="about.html">About</a>
+        <a id="signin-button" class="button white-button" href="">Sign in</a>
+      </nav>
+    </div>
   </header>
-
-  <nav>
-    <img class="hamburger" src="images/hamburger.svg" alt="menu">
-    <a href="#">menu</a>
-  </nav>
-
   <section class="main">
     <h1>Meet the team</h1>
-
 
     <div class="boxes">
 
@@ -30,19 +45,20 @@
       <div class="box">
         <img src="images/phillip.jpg" alt="Phillip">
 
-        <h2>Phillip Smith</h2>
-        <p>Amet nam eos eaque corrupti voluptatum corrupti, repellat? Doloribus
-        doloribus pariatur veniam voluptatibus aspernatur.</p>
+        <h2>Phillip</h2>
+        <p>Fabulous Back End Engineer.
+        <a data-name="phillip" class="more" href="#">more...</a>
+        </p>
       </div>
 
       <!-- Jimmy -->
       <div class="box">
         <img src="images/jimmy.jpg" alt="Jimmy">
 
-        <h2>Jimmy McBride</h2>
+        <h2>Jimmy</h2>
         <p>
-        Amet sit voluptates quia similique excepturi, repellendus est. Eaque
-        consectetur accusamus quam ipsa cumque quasi omnis.
+        UI Designer Extraordinaire.
+        <a data-name="jimmy" class="more" href="#">more...</a>
         </p>
       </div>
 
@@ -50,9 +66,10 @@
       <div class="box">
         <img src="images/max.jpg" alt="Max Keller">
 
-        <h2>Max Keller</h2>
+        <h2>Max </h2>
         <p>
-        Elit consequuntur aut quaerat ipsa quidem ad! Dignissimos quos ex aspernatur eos ad? 
+        Amazing Front End Engineer.
+        <a data-name="max" class="more" href="#">more...</a>
         </p>
       </div>
 
@@ -60,10 +77,10 @@
       <div class="box">
         <img src="images/ryan.jpg" alt="Ryan">
 
-        <h2>Ryan West</h2>
+        <h2>Ryan</h2>
         <p>
-        Dolor aut nobis ad ipsum quidem ad? Exercitationem mollitia quis
-        perferendis tenetur repellendus. 
+        Mythical UI Designer.<br>
+        <a data-name="ryan" class="more" href="#">more...</a>
         </p>
       </div>
 
@@ -71,10 +88,10 @@
       <div class="box">
         <img src="images/scott.jpg" alt="Scott Grobe">
 
-        <h2>Scott Grobe</h2>
+        <h2>Scott</h2>
         <p>
-        Dolor eum laborum quibusdam temporibus doloribus modi velit corporis.
-        Eius assumenda cupiditate obcaecati vero dicta!
+        Prodigious Front End Engineer.
+        <a data-name="scott" class="more" href="#">more...</a>
         </p>
       </div>
 
@@ -82,9 +99,10 @@
       <div class="box">
         <img src="images/cesare.jpg" alt="Cesare">
 
-        <h2>Cesare Ferrari</h2>
+        <h2>Cesare</h2>
         <p>
-        Lorem ipsum eum harum aspernatur consectetur ipsum saepe. 
+        Splendid UI Designer.<br>
+        <a data-name="cesare" class="more" href="#">more...</a>
         </p>
       </div>
 
@@ -99,18 +117,105 @@
   </section>
 
   <footer>
-    <img class="footer-logo" src="images/HOW2-white.svg" alt="HOW2">
+    <div class="footer-info">
+      <img class="footer-logo" src="images/HOW2-white.svg" alt="HOW2">
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="categories.html">Categories</a>
-      <a href="about.html">About</a>
-      <a href="">Sign in</a>
-      <a href="">Sign up</a>
-    </nav>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a href="">Sign in</a>
+        <a href="">Sign up</a>
+      </nav>
+    </div>
 
-    <p class="credits">&copy; 2019 - All right reserved.</p>
+    <p class="credits">&copy; 2019 - HOW2 - All right reserved.</p>
   </footer>
   
+
+
+  <div class="modal hide">
+    <a class="close" href="">X</a>
+
+    <div class="slide" data-name="phillip">
+      <img src="images/phillip-large.jpg" alt="Phillip">
+      <div class="info">
+        <h2>Phillip Smith</h2>
+        <p>Ipsum tenetur explicabo blanditiis itaque sit unde ex aspernatur
+        veritatis qui, atque? Deserunt repellat architecto aliquam laborum
+        sapiente. Recusandae nobis error culpa consequatur non non expedita
+        numquam necessitatibus itaque quidem.</p>
+        <a class="button small-white-button" href="">View Website</a>
+      </div>
+    </div>
+
+    <div class="slide" data-name="jimmy">
+      <img src="images/jimmy-large.jpg" alt="Jimmy">
+      <div class="info">
+        <h2>Jimmy McBride</h2>
+        <p>Ipsum tenetur explicabo blanditiis itaque sit unde ex aspernatur
+        veritatis qui, atque? Deserunt repellat architecto aliquam laborum
+        sapiente. Recusandae nobis error culpa consequatur non non expedita
+        numquam necessitatibus itaque quidem.</p>
+        <a class="button small-white-button" href="">View Website</a>
+      </div>
+    </div>
+    
+    <div class="slide" data-name="max">
+      <img src="images/max-large.jpg" alt="Max">
+      <div class="info">
+        <h2>Max Keller</h2>
+        <p>Ipsum tenetur explicabo blanditiis itaque sit unde ex aspernatur
+        veritatis qui, atque? Deserunt repellat architecto aliquam laborum
+        sapiente. Recusandae nobis error culpa consequatur non non expedita
+        numquam necessitatibus itaque quidem.</p>
+        <a class="button small-white-button" href="">View Website</a>
+      </div>
+    </div>
+
+    <div class="slide" data-name="ryan">
+      <img src="images/ryan-large.jpg" alt="Ryan">
+      <div class="info">
+        <h2>Ryan West</h2>
+        <p>Ipsum tenetur explicabo blanditiis itaque sit unde ex aspernatur
+        veritatis qui, atque? Deserunt repellat architecto aliquam laborum
+        sapiente. Recusandae nobis error culpa consequatur non non expedita
+        numquam necessitatibus itaque quidem.</p>
+        <a class="button small-white-button" href="">View Website</a>
+      </div>
+    </div>
+
+    <div class="slide" data-name="scott">
+      <img src="images/scott-large.jpg" alt="Scott">
+      <div class="info">
+        <h2>Scott Grobe</h2>
+        <p>Ipsum tenetur explicabo blanditiis itaque sit unde ex aspernatur
+        veritatis qui, atque? Deserunt repellat architecto aliquam laborum
+        sapiente. Recusandae nobis error culpa consequatur non non expedita
+        numquam necessitatibus itaque quidem.</p>
+        <a class="button small-white-button" href="">View Website</a>
+      </div>
+    </div>
+
+    <div class="slide" data-name="cesare">
+      <img src="images/cesare-large.jpg" alt="Cesare">
+      <div class="info">
+        <h2>Cesare Ferrari</h2>
+        <p>Ipsum tenetur explicabo blanditiis itaque sit unde ex aspernatur
+        veritatis qui, atque? Deserunt repellat architecto aliquam laborum
+        sapiente. Recusandae nobis error culpa consequatur non non expedita
+        numquam necessitatibus itaque quidem.</p>
+        <a class="button small-white-button" href="">View Website</a>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="overlay hide"> </div>
+
+
+
+  <script src="javascripts/scripts.js"></script>
+  <script src="components/modal/modal.js"></script>
 </body>
 </html>

@@ -2,9 +2,36 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px 0 20px;
+  margin: 20px 0 0;
+
+  @media @desktop {
+    flex-direction: row;
+    margin-top: 0;
+    align-items: stretch;
+  }
 }
 
 .logo {
   width: 180px;
+
+  @media @desktop {
+    margin: 0 30px;
+  }
+}
+
+.tagline {
+  margin-bottom: 20px;
+
+  @media @desktop {
+    //display: none;
+    position: absolute;
+    top: 90px;
+    left: 30px;
+    color: white;
+  }
+}
+
+.dark {
+  // color: lighten(@dark-gray, 20%);
+  color: @blue;
 }

@@ -2,10 +2,22 @@
   width: 100%;
   height: 228px;
   background-image: url(../images/man.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   padding: 0 10px;
+
+  @media @desktop {
+    background-image: url(../images/man-large.jpg);
+    height: 350px;
+  }
+
+  @media @tablet {
+    background-image: url(../images/man-large.jpg);
+    height: 350px;
+  }
 
   h1 {
     color: @yellow;
@@ -13,5 +25,25 @@
     font-size: 4.0rem;
     line-height: 4.2rem;;
     margin-top: 60px;
+
+    @media @desktop {
+      background-color: rgba(50,49,47, 0.6);
+      padding: 20px;
+    }
+
+    @media @tablet {
+      background-color: rgba(50,49,47, 0.6);
+      padding: 20px;
+    }
+  }
+
+  .large-button {
+    @media @desktop {
+      margin: 40px 40px 0 0;
+    }
+
+    @media @tablet {
+      margin: 40px 40px 0 0;
+    }
   }
 }

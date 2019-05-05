@@ -13,12 +13,29 @@
   <header>
     <a href="index.html"><img class="logo" src="images/HOW2.svg" alt="HOW2"></a>
     <p class="tagline">Simplifying life for everyone</p>
-  </header>
 
-  <nav>
-    <img class="hamburger" src="images/hamburger.svg" alt="menu">
-    <a href="#">menu</a>
-  </nav>
+    <div class="mobile-menu">
+      <div class="menu-bar">
+        <img class="hamburger menu-btn" src="images/hamburger.svg" alt="menu">
+        <a class="menu-btn" href="#">menu</a>
+      </div>
+      <nav class="hide">
+        <a class="active" href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a id="signin-button" class="button white-button" href="">Sign in</a>
+      </nav>
+    </div>
+
+    <div class="full-menu">
+      <nav>
+        <a class="active" href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a id="signin-button" class="button white-button" href="">Sign in</a>
+      </nav>
+    </div>
+  </header>
 
   <section class="hero">
     <h1>
@@ -31,14 +48,14 @@
 
 
   <section class="main">
-    <h2>Newest life hacks</h2>
+    <h2>Popular life hacks</h2>
 
     <!-- Card 1 -->
     <div class="card">
       <div class="info">
         <div class="meta">
           <div>
-            <span class="thumbs-count up">115</span>
+            <span class="thumbs-count up">315</span>
             <img src="images/thumb_up.svg" alt="Thumbs up">
           </div>
 
@@ -51,9 +68,9 @@
         <div class="desc">
           <h3>The 20 - 20 - 20 rule</h3>
           <p>
-          Dolor dolore iure maiores excepturi dolores doloremque sunt quae
-          cumque tenetur? Debitis fuga debitis commodi dolor amet! Beatae
-          reprehenderit aut itaque et consequuntur maxime?
+          Eye strain happens when
+          your eyes get tired from intense use. Fortunately, it can be remedied
+          with a helpful trick called the 20-20-20 rule...
           </p>
         </div>
       </div>
@@ -76,15 +93,18 @@
           </div>
 
           <div>
-            <span class="thumbs-count down">405</span>
+            <span class="thumbs-count down">40</span>
             <img src="images/thumb_down.svg" alt="Thumbs down">
           </div>
         </div>
 
         <div class="desc">
-          <h3>Waterproof shoes</h3>
-          <p>Lorem dolorem dolorem aliquid molestias possimus impedit, officia
-          nulla quasi ducimus iste fuga.</p>
+          <h3>How to waterproof shoes</h3>
+          <p>
+           With a dependable waterproofing spray, or simple piece of wax and a
+           hairdryer, you can safeguard any type of textile-based footwear in
+           minutes...
+          </p>
         </div>
       </div>
 
@@ -112,11 +132,11 @@
         </div>
 
         <div class="desc">
-          <h3>Dry your clothes faster</h3>
+          <h3>How to dry your clothes faster</h3>
           <p>
-          Consectetur nesciunt optio eaque quas esse maiores quasi ipsa
-          veritatis, assumenda facere eaque magni repudiandae. Est accusamus
-          dolores vitae alias enim. 
+          Try placing a fresh, dry towel into a standard tumble-dryer to speed
+          up the water-absorption process. Try ironing or blow-drying each
+          garment to steam out the water with heat...
           </p>
         </div>
       </div>
@@ -136,18 +156,21 @@
   </section>
 
   <footer>
-    <img class="footer-logo" src="images/HOW2-white.svg" alt="HOW2">
+    <div class="footer-info">
+      <img class="footer-logo" src="images/HOW2-white.svg" alt="HOW2">
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="categories.html">Categories</a>
-      <a href="about.html">About</a>
-      <a href="">Sign in</a>
-      <a href="">Sign up</a>
-    </nav>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a href="">Sign in</a>
+        <a href="">Sign up</a>
+      </nav>
+    </div>
 
-    <p class="credits">&copy; 2019 - All right reserved.</p>
+    <p class="credits">&copy; 2019 - HOW2 - All right reserved.</p>
   </footer>
   
+  <script src="javascripts/scripts.js"></script>
 </body>
 </html>

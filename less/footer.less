@@ -10,10 +10,22 @@ footer {
     background-color: transparent;
     height: 100%;
 
+    @media @desktop {
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-left: 50px;
+    }
+
     a {
       color: white;
       text-decoration: none;
       padding: 5px 0;
+      .condensed();
+      text-transform: uppercase;
+
+      @media @desktop {
+        margin-right: 40px;
+      }
     }
   }
 
@@ -32,4 +44,13 @@ footer {
   }
 }
 
+.footer-info {
+  @media @desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  }
+}
 

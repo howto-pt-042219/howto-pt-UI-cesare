@@ -12,79 +12,104 @@
 
   <header>
     <a href="index.html"><img class="logo" src="images/HOW2.svg" alt="HOW2"></a>
-    <p class="tagline">Simplifying life for everyone</p>
-  </header>
+    <p class="tagline dark">Simplifying life for everyone</p>
 
-  <nav>
-    <img class="hamburger" src="images/hamburger.svg" alt="menu">
-    <a href="#">menu</a>
-  </nav>
+    <div class="mobile-menu">
+      <div class="menu-bar">
+        <img class="hamburger menu-btn" src="images/hamburger.svg" alt="menu">
+        <a class="menu-btn" href="#">menu</a>
+      </div>
+      <nav class="hide">
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a id="signin-button" class="button white-button" href="">Sign in</a>
+      </nav>
+    </div>
+
+    <div class="full-menu">
+      <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a id="signin-button" class="button white-button" href="">Sign in</a>
+      </nav>
+    </div>
+  </header>
 
   <section class="main">
     <h1>Hack Categories</h1>
 
+    <div class="tabs">
+      <a class="button category-button tab active-tab" data-category="all" href="">All</a>
+      <a class="button category-button tab" data-category="home" href="">At home</a>
+      <a class="button category-button tab" data-category="outside" href="">Outside</a>
+      <a class="button category-button tab" data-category="timesavers" href="">Timesavers</a>
+    </div>
 
     <div class="boxes">
 
       <!-- Category 1 -->
-      <div class="box">
+      <div class="box" data-category="outside">
         <img src="images/travel.svg" alt="Travel">
 
         <h2>Travel</h2>
-        <p>Amet nam eos eaque corrupti voluptatum corrupti, repellat? Doloribus
-        doloribus pariatur veniam voluptatibus aspernatur.</p>
+        <p>
+        Traveling can be incredible, but time-consuming and stressful to
+        get right. 
+        </p>
       </div>
 
       <!-- Category 2 -->
-      <div class="box">
-        <img src="images/devices.svg" alt="Travel">
+      <div class="box" data-category="home">
+        <img src="images/devices.svg" alt="Devices">
 
         <h2>Devices</h2>
         <p>
-        Amet sit voluptates quia similique excepturi, repellendus est. Eaque
-        consectetur accusamus quam ipsa cumque quasi omnis.
+        Get some useful tips for your trusty electronic devices to save you both
+        money and time.
         </p>
       </div>
 
       <!-- Category 3 -->
-      <div class="box">
+      <div class="box" data-category="home">
         <img src="images/children.svg" alt="Children">
 
         <h2>Children</h2>
         <p>
-        Elit consequuntur aut quaerat ipsa quidem ad! Dignissimos quos ex aspernatur eos ad? 
+        Life hacks for children that make parenting easier and more fun.
         </p>
       </div>
 
       <!-- Category 4 -->
-      <div class="box">
+      <div class="box" data-category="home">
         <img src="images/finance.svg" alt="Finance">
 
         <h2>Finance</h2>
         <p>
-        Dolor aut nobis ad ipsum quidem ad? Exercitationem mollitia quis
-        perferendis tenetur repellendus. 
+        Here are 70 money skills everyone
+        must know if they want to get ahead in their finances.
         </p>
       </div>
 
       <!-- Category 5 -->
-      <div class="box">
+      <div class="box" data-category="timesavers">
         <img src="images/clock.svg" alt="Save time">
 
         <h2>Save time</h2>
         <p>
-        Dolor eum laborum quibusdam temporibus doloribus modi velit corporis.
-        Eius assumenda cupiditate obcaecati vero dicta!
+        Life can be busy and sometimes you need time-saving tips to help you
+        spend more time doing the activities you want.
         </p>
       </div>
 
       <!-- Category 6 -->
-      <div class="box">
+      <div class="box" data-category="outside">
         <img src="images/cart.svg" alt="Shopping">
 
         <h2>Shopping</h2>
         <p>
-        Lorem ipsum eum harum aspernatur consectetur ipsum saepe. 
+        Grocery store hacks that will save you a ton of money on food.
         </p>
       </div>
 
@@ -99,18 +124,22 @@
   </section>
 
   <footer>
-    <img class="footer-logo" src="images/HOW2-white.svg" alt="HOW2">
+    <div class="footer-info">
+      <img class="footer-logo" src="images/HOW2-white.svg" alt="HOW2">
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="categories.html">Categories</a>
-      <a href="about.html">About</a>
-      <a href="">Sign in</a>
-      <a href="">Sign up</a>
-    </nav>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a href="">Sign in</a>
+        <a href="">Sign up</a>
+      </nav>
+    </div>
 
-    <p class="credits">&copy; 2019 - All right reserved.</p>
+    <p class="credits">&copy; 2019 - HOW2 - All right reserved.</p>
   </footer>
   
+  <script src="javascripts/scripts.js"></script>
+  <script src="components/tabs/tabs.js"></script>
 </body>
 </html>
