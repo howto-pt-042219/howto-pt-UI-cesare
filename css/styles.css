@@ -609,11 +609,33 @@ footer .credits {
 .tabs {
   margin: 20px auto 40px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 80%;
 }
 .tabs .tab {
-  margin: 0 10px;
+  margin: 0 0 10px;
+  text-align: center;
+}
+@media (min-width: 800px) {
+  .tabs .tab {
+    margin: 0 10px;
+  }
+}
+@media (min-width: 1000px) {
+  .tabs .tab {
+    margin: 0 10px;
+  }
+}
+@media (min-width: 800px) {
+  .tabs {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1000px) {
+  .tabs {
+    flex-direction: row;
+  }
 }
 .overlay {
   position: fixed;
